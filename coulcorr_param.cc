@@ -51,7 +51,7 @@ double coulcorr_param(const double *x, const double *par)
   double c_AR = (cA  + pow(alpha,cB) + cC*pow(R,cD))/cE*pow(alpha/R,cF);
   double d_AR = (dA + (pow(R,dB) + dC*pow(alpha,dF))/(pow(R,dD)*pow(alpha,dE)));
   double t = R*q/HBARC/alpha;
-  double parametrization = 1./(1. + PREFACTOR*a_AR*R/pow(alpha,1.)/(1.+b_AR*t+c_AR*t*t+d_AR*t*t*t*t));
+  double parametrization = 1./(1. + PREFACTOR*a_AR*R/alpha/(1.+b_AR*t+c_AR*t*t+d_AR*t*t*t*t));
 
   double Aa =  0.207369;
   double Ab = -0.0099871;
