@@ -19,32 +19,32 @@ double coulcorr_param(const double *x, const double *par)
     double R = par[1];
     double alpha = par[2];
    
-    double aA =  0.360596;
-    double aB = -0.545079;
-    double aC =  0.0347488;
-    double aD = -1.30389;
-    double aE =  0.00377961;
-   
-    double bA =  2.04017;
-    double bB =  0.559724;
-    double bC =  2.47224;
-    double bD = -1.26815;
-    double bE = -0.117674;
-    double bF =  0.527379;
-   
-    double cA = -1.00015;
-    double cB =  0.000123187;
-    double cC =  7.98451e-05;
-    double cD =  0.269861;
-    double cE =  2.56089e-05;
-    double cF =  1.75202;
-   
-    double dA = 0.00263107;
-    double dB =  -0.131239;
-    double dC = -0.831485;
-    double dD =  1.57528;
-    double dE =  0.275676;
-    double dF = 0.0493686;
+    double aA =  0.26984;
+    double aB = -0.491231;
+    double aC =  0.0352313;
+    double aD = -1.31628;
+    double aE =  0.00359148;
+
+    double bA =  2.37267;
+    double bB =  0.586309;
+    double bC =  2.24867;
+    double bD = -1.43278;
+    double bE = -0.0521642;
+    double bF =  0.729434;
+
+    double cA = -4.30347 ;
+    double cB =  1.17849e-05;
+    double cC =  3.30346;
+    double cD =  1.27273e-06 ;
+    double cE =  3.03399e-06;
+    double cF =  1.68883;
+
+    double dA =  0.000568486;
+    double dB = -0.805271;
+    double dC = -0.192606 ;
+    double dD =  2.77504;
+    double dE =  2.02951;
+    double dF =  1.07906; 
    
     double a_AR = pow((aA * alpha + aB),2) + pow((aC * R + aD),2) + aE * pow((alpha * R + 1),2);
     double b_AR = (1. + bA*pow(R,bB) -pow(alpha,bC)) / (alpha*alpha*R*(pow(alpha,bD)+bE*pow(R,bF)));
@@ -53,19 +53,19 @@ double coulcorr_param(const double *x, const double *par)
     double t = R*q/HBARC/alpha;
     double parametrization = 1./(1. + PREFACTOR*a_AR*R/alpha/(1.+b_AR*t+c_AR*t*t+d_AR*t*t*t*t));
        
-    double Aa =  0.207369;
-    double Ab = -0.0099871;
-    double Ac = -0.0267108;
-    double Ad = -0.00372829;
-    double Ae =  0.00118981;
-    double Af =  0.000159437;
-   
-    double Ba = 25.805;
-    double Bb =  4.01674;
-    double Bc =  0.0087332;
-    double Bd = -0.256058;
-    double Be =  0.0107724;
-    double Bf = -0.00270474;
+    double Aa =  0.126253;
+    double Ab =  0.053848;
+    double Ac = -0.00912627;
+    double Ad = -0.018459;
+    double Ae =  0.000851755;
+    double Af =  0.000417179;
+
+    double Ba = 19.3162;
+    double Bb =  5.58961;
+    double Bc =  2.26264;
+    double Bd = -1.28486;
+    double Be = -0.0821616;
+    double Bf =  0.0238446; 
    
     double A = Aa + Ab*alpha + Ac*R + Ad*alpha*R + Ae*R*R + Af*alpha*alpha*R*R;
     double B = Ba + Bb*alpha + Bc*R + Bd*alpha*R + Be*R*R + Bf*alpha*alpha*R*R;
@@ -73,7 +73,7 @@ double coulcorr_param(const double *x, const double *par)
    
    
     double q0 = 0.07;
-    double n = 20;
+    double n = 20.0;
     double cutoff = 1. / ( 1.+pow(q/q0,n) );
    
    
