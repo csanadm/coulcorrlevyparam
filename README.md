@@ -10,6 +10,13 @@ This package contains a calculation for quantum-statistical correlation function
 - [**coulcorr_param.cc**](https://github.com/csanadm/coulcorrlevyparam/blob/main/coulcorr_param.cc): This contains the calculations themselves
 - [**calc_func.cc**](https://github.com/csanadm/coulcorrlevyparam/blob/main/calc_func.cc): Example calculation of the correlation function, including Coulomb correction
 
+## Example results
+The below example has been created using the output from [calc_func.cc](https://github.com/csanadm/coulcorrlevyparam/blob/main/calc_func.cc)
+
+![calc_func](https://user-images.githubusercontent.com/38218165/188124611-14cda30a-82ac-4a4d-9944-7dad7c0fe57c.png)
+
+
+
 ## Publications
 - Expanded empirical formula for Coulomb final state interaction in the presence of Lévy sources<br>
 Máté Csanád, Sándor Lökös, Márton Nagy<br>
