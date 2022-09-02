@@ -11,9 +11,9 @@ This package contains a calculation for quantum-statistical correlation function
 - [**calc_func.cc**](https://github.com/csanadm/coulcorrlevyparam/blob/main/calc_func.cc): Example calculation of the correlation function, including Coulomb correction
 
 ## Publications
-- Expanded empirical formula for Coulomb final state interaction in the presence of Lévy sources
-Máté Csanád, Sándor Lökös, Márton Nagy
+- Expanded empirical formula for Coulomb final state interaction in the presence of Lévy sources<br>
+Máté Csanád, Sándor Lökös, Márton Nagy<br>
 Phys.Part.Nucl. 51 (2020) 3, 238-242, [arXiv:1910.02231 [hep-ph]](https://arxiv.org/abs/1910.02231).
-- Coulomb final state interaction in heavy ion collisions for Lévy sources
-Máté Csanád, Sándor Lökös, Márton Nagy
+- Coulomb final state interaction in heavy ion collisions for Lévy sources<br>
+Máté Csanád, Sándor Lökös, Márton Nagy<br>
 Universe 5 (2019) 6, 133, [arXiv:1905.09714 [nucl-th]](https://arxiv.org/abs/1905.09714).
